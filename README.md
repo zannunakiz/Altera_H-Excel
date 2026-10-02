@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 <p align="center">
   <img src="public/Hermes.png" alt="Hermes agent" width="120" />
-  &nbsp;&nbsp;<b>➕</b>&nbsp;&nbsp;
+  &nbsp;&nbsp;<b> </b>&nbsp;&nbsp;
   <img src="public/MicrosoftExcel.png" alt="Microsoft Excel" width="260" />
 </p>
 
