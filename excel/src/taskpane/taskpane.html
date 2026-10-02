@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hermes</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { font-family: 'Segoe UI', Calibri, sans-serif; color: #1b1b1b; display: flex; flex-direction: column; padding: 12px; box-sizing: border-box; }
+    #head { display: flex; align-items: center; justify-content: space-between; }
+    h1 { font-size: 17px; margin: 0; color: #107C41; }
+    #newchat { font-size: 11px; background: none; border: 1px solid #c9cdd2; border-radius: 4px; padding: 3px 8px; cursor: pointer; color: #6a6e73; }
+    #newchat:hover { background: #f2f2f2; }
+    #status { font-size: 11px; color: #6a6e73; min-height: 14px; margin: 4px 0 8px; }
+    #log { flex: 1; overflow-y: auto; border: 1px solid #e3e6e8; border-radius: 6px; padding: 8px; background: #fafafa; }
+    .msg { font-size: 13px; line-height: 1.4; margin: 6px 0; padding: 7px 10px; border-radius: 8px; white-space: pre-wrap; max-width: 92%; }
+    .user { background: #107C41; color: #fff; margin-left: auto; }
+    .bot { background: #fff; border: 1px solid #e3e6e8; }
+    #preview { margin: 8px 0; }
+    .act { font-size: 12px; padding: 4px 0; border-bottom: 1px solid #eee; }
+    #apply { display: none; width: 100%; background: #0e6b38; color: #fff; border: 0; border-radius: 4px; padding: 8px; font-weight: 600; cursor: pointer; }
+    #row { display: flex; gap: 6px; margin-top: 8px; }
+    #prompt { flex: 1; font-family: inherit; font-size: 13px; padding: 8px; border: 1px solid #c9cdd2; border-radius: 4px; resize: none; height: 44px; }
+    #ask { background: #107C41; color: #fff; border: 0; border-radius: 4px; padding: 0 16px; font-weight: 600; cursor: pointer; }
+    #ask:hover { background: #0e6b38; }
+    #ask:disabled { background: #9bb3a6; cursor: default; }
+  </style>
+</head>
+<body>
+  <div id="head">
+    <h1>Hermes</h1>
+    <button id="newchat">New chat</button>
+  </div>
+  <div id="status">Ready. Open your data tab and ask.</div>
+  <div id="log"></div>
+  <div id="preview"></div>
+  <button id="apply">Apply changes</button>
+  <div id="row">
+    <textarea id="prompt" placeholder="Message Hermes…  (Enter to send)"></textarea>
+    <button id="ask">Send</button>
+  </div>
+</body>
+</html>

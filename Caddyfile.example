@@ -1,0 +1,13 @@
+# Shared backend proxy for every Hermes-for-Office app.
+# Copy this file to "Caddyfile" (no extension) and replace YOUR_API_SERVER_KEY
+# with the API_SERVER_KEY from your ~/.hermes/.env.
+#
+# Caddy terminates HTTPS on :8643 (Office add-ins must be HTTPS) and injects the
+# bearer token, so the API key never lives in any add-in's code.
+# Run with:  caddy run
+
+localhost:8643 {
+    reverse_proxy 127.0.0.1:8642 {
+        header_up Authorization "Bearer YOUR_API_SERVER_KEY"
+    }
+}

@@ -1,0 +1,16 @@
+# dependencies / build (any app subfolder)
+**/node_modules/
+**/dist/
+
+# secrets — NEVER commit these
+Caddyfile
+.env
+*.pem
+*.key
+**/certs/
+
+# misc
+*.log
+.DS_Store
+
+# By 4SRG
