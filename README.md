@@ -29,6 +29,17 @@
 
 ---
 
+<p align="center">
+  <img src="public/SystemDesign.png" alt="Altera system design — Excel add-in → Caddy → Hermes API Server → agent" width="820" />
+</p>
+
+<p align="center">
+  Every request travels from the Excel add-in, through a Caddy proxy that adds HTTPS and injects the secret, into the Hermes API Server running your own agent.<br />
+  Changes come back as a reviewable action plan — and nothing is written to the sheet until you click <strong>Apply</strong>.
+</p>
+
+---
+
 ## ✨ What is Altera?
 
 **Altera** turns Microsoft Office into a first-class client for **your own AI agent**. Instead of renting a black-box assistant, you connect a [Hermes](https://github.com/NousResearch/hermes-agent) agent you control — with your models, your tools, your memory, and your skills — and drive it from right where the work lives: inside the spreadsheet.
